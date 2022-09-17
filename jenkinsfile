@@ -8,10 +8,11 @@ pipeline {
             }
         }
         
-        stage("Cheking Git clone"){
+        stage("Cheking MAven Version"){
             
             steps {
-                sh "ls -al"
+                sh "java --version"
+                sh "mvn --version"
             }
         }
     }
