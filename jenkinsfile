@@ -1,0 +1,18 @@
+pipeline {
+    agent any
+    
+    stages {
+        stage("Source Code Clone"){
+            steps {
+                git branch: 'main', url: 'https://github.com/dhanwanit/jenkins-nodejs.git'
+            }
+        }
+        
+        stage("Cheking Git clone"){
+            
+            steps {
+                sh "ls -al"
+            }
+        }
+    }
+}
