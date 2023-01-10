@@ -8,5 +8,5 @@ const server = http.createServer((req, res) => {
 });
 
 server.listen(port, () => {
-  console.log(`Server Node  1 running on http://localhost:${port}/`);
+  console.log(`Server Node  2 running on http://localhost:${port}/`);
 });
